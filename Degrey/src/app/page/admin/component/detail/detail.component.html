@@ -1,0 +1,35 @@
+<div id="dialog">
+  <h1 style="margin: 0 auto;">Chi tiết sản phẩm</h1>
+  <div id="dialog_box">
+  <div class="img_product_detail">
+    <img src="{{this.product.imgURL}}" alt="">
+  </div>
+
+  <!-- <button (click)="closeDialog()">Close</button> -->
+
+  <div class="update_product_detail">
+    <form class="form" [formGroup]="productForm">
+      <span>Name: </span>
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" formControlName="name" placeholder="{{this.product.name}}" />
+      </div>
+
+      <span>Price: </span>
+      <div class="form-group">
+        <input type="number" class="form-control" id="price" formControlName="price"
+          placeholder="{{this.product.price}}" />
+      </div>
+
+      <span>Quantity: </span>
+      <div class="form-group">
+        <input type="text" class="form-control" id="imgSrc" formControlName="quantity"
+          placeholder="{{this.product.quantity}}" />
+      </div>
+    </form>
+    <div class="btn_update">
+      <button (click)="updateProduct(productForm.value)">Sửa</button>
+    </div>
+    
+  </div>
+</div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "userofdegrey": {
+      "hosting": {
+        "Degrey": [
+          "userofdegrey"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "userofdegrey"
+  }
+}

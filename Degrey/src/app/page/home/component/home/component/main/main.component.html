@@ -1,0 +1,90 @@
+<div class="shop">
+    <div class="shop-introduce">
+        <span>Trang chủ</span>
+        
+        <li class="active">
+            <span style="color: #777777;">Tất cả sản phẩm</span>
+        </li>
+    </div>
+</div>
+
+<div class="banner">
+    <img src="https://file.hstatic.net/1000281824/file/cover_1_87a6ac90b1c94059a093003239175873.jpg" alt="">
+</div>
+
+<div class="collection-headding">
+    <div class="row">
+        <h3>Tất cả sản phẩm</h3>
+        <div class="sapxep">
+            <div class="container-sapxep">
+                <p>
+                    <img style="width: 25px; height: 25px;margin: 5px;" src="../../../assets/images/sapxep.jpg" alt="">
+                    Sắp xếp
+                </p>
+                <div class="down"><img src="../../../assets/images/down.png" alt=""></div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="collection-filter">
+    <div class="collection-filter-container">
+        <div class="filter">
+            <img src="funnel.png" alt="">
+            <span style="font-weight: bold; margin-left: 10px;">BỘ LỌC</span>
+        </div>
+        <div class="choice">
+            <div class="loc">
+                <div class="a">
+                    <span>Lọc giá</span>
+                    <div class="down"><img src="../../../assets/images/down.png" alt=""></div>
+                </div>
+
+                <div class="a">
+                    <span >Màu sắc</span>
+                    <div class="down"><img src="../../../assets/images/down.png" alt=""></div>
+                </div>
+
+                <div class="a">
+                    <span>Kích thước</span>
+                    <div class="down"><img src="../../../assets/images/down.png" alt=""></div>
+                </div>
+                
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="listproduct">
+    <div class="row1" >
+        <div class="product1" *ngFor="let product of productList$|async">
+            <div style="visibility: hidden;" class="order">
+                <span>Đặt hàng trước</span>
+            </div>
+            <img src="{{product.imgURL}}" alt="">
+            <div class="detail">
+                <h3>
+                    <a href=""> {{product.name}} </a>
+                </h3>
+
+                <h1>{{product.quantity}}</h1>
+                
+                <div class="on-sale">
+                    <span class="price">{{product.price}}</span>
+                    <span class="price-sale">350,000đ</span>
+                </div>
+            </div>
+            <button (click)="addProductToCart(product)">mua</button>
+            <!-- <button (click)="delete(product.id)">delete</button> -->
+        </div>
+    </div>
+    
+    <div class="loadmore">
+        <a href="">Xem thêm sản phẩm
+            <b> tất cả sản phẩm</b>
+        </a>
+        
+    </div>
+</div>

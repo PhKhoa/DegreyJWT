@@ -1,0 +1,281 @@
+.mainHeader{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    //flex-direction: row;
+    justify-content: center;
+}
+
+.flex-header{
+    //height: 90px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.exit > span{
+    padding: 0px;
+    font-size: 16px;
+    margin: 0px;
+    display: flex;
+    justify-content: end;
+}
+
+.content-input{
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 5px;
+}
+
+.product-bill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.bill-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bill-input > button{
+    height: 25px;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.text-bill{
+    display: flex;
+    justify-content: start;
+}
+
+.btn-confirm{
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+.menulogo{
+    height: 90px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.menulogo > img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.logo > img {
+    width: 85px;
+    height: 70px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list > p{
+    margin: 10px;
+    font-size: 17px;
+}
+
+
+.search{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ececec;
+    background: #fff;
+    /* padding: 9px 9px 10px 50px; */
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.search > input{
+    height: 27px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 8px;
+    color: #777777;
+    
+}
+
+.cart {
+    width: 58px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+
+
+.cart > span{
+    font-size: 13px;
+}
+
+.cartlogo > img{
+    width: 25px;
+    height: 25px;
+}
+
+.shop-introduce > li {
+    list-style-type: none; /* Xóa dấu chấm */
+}
+
+.shop-introduce > li.active::before {
+    content: "/"; 
+    padding: 5px; 
+    
+  }
+
+  //dialog
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    .form-group {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 10px;
+  
+      input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  .title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+  
+  .action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  body {
+    margin: 40px;
+  }
+  
+  dialog {
+    text-align: center;
+    background-color: #D4DFE2;
+    color: #333;
+    border: none;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  dialog[open] {
+    animation: toggle-modal 0.3s ease-in-out;
+  }
+  
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  dialog h2 {
+    margin: 0 0 30px;
+    color: #eee;
+  }
+  
+  input {
+    padding: 8px 20px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-modal {
+    background: #c70000;
+  }
+  
+  .open-modal {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @keyframes toggle-modal {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+
+#logout,#login{
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  img{
+    margin: 0px 5px;
+  }
+  span{
+    margin: 0 5px;
+  }
+}
+
+#userLog{
+  width: 150px;
+  display: flex;
+  text-align: center;
+}
+
+#admin{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

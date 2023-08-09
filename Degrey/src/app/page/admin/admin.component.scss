@@ -1,0 +1,310 @@
+#admin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container{
+    width: 90%;
+    //margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-between;
+    text-align: center;
+    //justify-content: center;
+    margin: 5px 0;
+    div{
+        width: 30%;
+        align-items: center;
+        //text-align: center;
+    }
+}
+
+ //dialog
+ .form {
+    width: 100%;
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    .form-group {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 10px;
+  
+      input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  #admin_input{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    //margin: 0 auto;
+  }
+
+  .containerbtn{
+    display: flex;
+    justify-content: center;
+    .btnadd{
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  
+  .title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+  
+  .action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  body {
+    margin: 40px;
+  }
+  
+  dialog {
+    text-align: center;
+    background-color: #D4DFE2;
+    color: #333;
+    border: none;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  dialog[open] {
+    animation: toggle-modal 0.3s ease-in-out;
+  }
+  
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  dialog h2 {
+    margin: 0 0 30px;
+    color: #eee;
+  }
+  
+  input {
+    padding: 8px 20px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-modal {
+    background: #c70000;
+  }
+  
+  .open-modal {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @keyframes toggle-modal {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+
+  #input_box{
+    input,button{
+        margin: 5px 5px;
+    }
+  }
+
+  #appDialog{
+    margin: 0 auto;
+  }
+
+  #product_name,#product_price,#product_quantity{
+    margin: auto 0;
+  }
+
+  //footer
+  
+footer{
+  //width: 100vw;
+  height: 505px;
+  margin: 30px 0px 0px;
+  background-color: #000000;
+}
+
+.footer-info{
+  /* width: 100vw;
+  height: 460px; */
+  padding: 40px 0px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-info{
+  width: 970px;
+  height: 390px;
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright{
+  //width: 100vw;
+  height: 45px;
+}
+
+.address{
+  width: 485px;
+  height: 343px;
+  /* margin: 0px 15px; */
+  /* padding: 10px 0px 20px; */
+  
+}
+
+h4{
+  font-size: 18px;
+  color: #9B9B9B;
+  margin: 20px 0px;
+}
+
+.degrey{
+  width: 242.5px;
+  /* padding: 0px 15px; */
+  
+}
+
+.degrey > p{
+  width: 212px;
+  /* height: 246px; */
+  color: white;
+}
+
+.logo{
+  padding: 0px 15px;
+}
+
+.footer-logo{
+  width: 212px;
+}
+
+.footer-logo > img{
+  width: 150px;
+  height: 57px;
+}
+
+.specific-address{
+  width: 242.5px;
+  color: white;
+
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.contact,.contact2,.contact3{
+  list-style: none;
+ 
+}
+
+/* .contact > b{
+  margin-bottom: 10px;
+} */
+
+ul{
+  padding: 0 15px;
+}
+
+.item{
+  color: white;
+  margin-bottom: 10px;
+
+}
+
+.item > a{
+  color: white;
+}
+
+.support {
+  width: 242px;
+  height: 258px;
+  
+}
+
+.hline{
+  display: flex;
+  flex-direction: row;
+}
+
+.box-content{
+  margin-left: 5px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.social > li{
+  border: 1px solid white;
+  width: 32px;
+  height: 32px;
+  margin: 0px 0px 0px 5px;
+  list-style: none;
+  border-radius: 5px;
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-copyright > p{
+  width: 940px;
+  height: 20px;
+  font-size: 13px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

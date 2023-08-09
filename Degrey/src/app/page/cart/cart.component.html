@@ -1,0 +1,152 @@
+<app-header></app-header>
+<div id="productList">
+    <div class="product1" *ngFor="let product of cartList$|async">
+        <!-- <div style="visibility: hidden;" class="order">
+            <span>Đặt hàng trước</span>
+        </div> -->
+        <img src="{{product.imgURL}}" alt="">
+        <div class="detail">
+            <h3 style="margin: auto 0;">
+                <a href=""> {{product.name}} </a>
+            </h3>
+            
+            <div class="on-sale">
+                <span class="price">{{product.price}} - {{product.stock}}</span>
+            </div>
+        </div>
+        <div class="crud">
+            <button (click)="addProductToStock(product)">Thêm</button>
+            <button (click)="removeProductFromStock(product)">Bớt</button>
+            <button (click)="removeProductFromCart(product)">Xóa</button>
+        </div>
+    </div>
+</div>
+<br>
+  <hr style="width: 90%;margin: 0 auto;">
+<br>
+
+<div id="toltal_price">
+    <div style="margin: 5px 50px 10px 0;">Tổng tiền: {{total$|async}}</div>
+    <button style="padding: 5px;" (click)="clearAllCart()">ClearAll</button>
+</div>
+
+
+
+<footer>
+    <div class="footer-info">
+        <div class="main-info">
+            <div class="address">
+                <h4>Về DEGREY</h4>
+                <div class="flex">
+                    <div class="degrey">
+                        <p>Cái tên Degrey được tạo ra rất ngẫu hứng, xuất phát từ “Chuỗi ngày u buồn về sự nghiệp, tương lai trong quá khứ của chính mình” – theo lời chia sẻ của Degrey’s founder.
+                            <br>
+                            <br>
+                            <b>CÔNG TY TNHH DEGREY</b>
+                            <br>
+                            0315986019 0315986019 cấp ngày 31/10/2019 tại Sở kế hoạch đầu tư TPHCM
+                        </p>
+                        <div class="footer-logo">
+                            <img src="https://file.hstatic.net/1000281824/file/dathongbao_22c990fc936b40e0a50a1b646f478284.png" alt="">
+                        </div>
+                    </div>
+                    <div class="specific-address">
+                        <ul>
+                            <li class="contact">
+                                <b>Địa chỉ</b>
+                                <br>
+                                <br>
+                                <b>-Sài gòn:
+                                    <br>
+                                </b>
+                                43 Huỳnh Văn Bánh P.17 Q.Phú Nhuận
+                                <br>
+                                1041 Luỹ Bán Bích P.Tân Thành Q.Tân Phú 
+                                <br>
+                                <b>-Đà Lạt:
+                                    <br>
+                                </b>
+                                11 Khu Hoà Bình P.1
+                                <br>
+                            </li>
+                            <li class="contact2">
+                                <b>Điện thoại:</b>
+                                033631117
+                            </li>
+                            <li class="contact3">
+                                <b>Email:</b>
+                                degrey.vn@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="support">
+                <h4>Hỗ trợ khách hàng</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li class="item">
+                            <a href="">Giới thiệu Degrey</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Hệ thống cửa hàng</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Hướng dẫn đặt hàng</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Chính sách và quy định</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Chính sách bảo mật</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Thông tin sở hữu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+  
+            <div class="takecare">
+                <h4>Chăm són khách hàng</h4>
+                <div class="copllaps">
+                    <div class="hline">
+                        <div class="box-icon">
+                            <img style="width: 40px;height: 40px; " src="https://davidfrenchfurnishings.co.uk/_webedit/cached-images/29-0-1326-963-7505-8231-476.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <span style="color: #9B9B9B;font-size: 21px;">0336311117</span>
+                            <u style="color: white;">degrey.vn@gmail.com</u>
+                        </div>
+                    </div>
+                    <h4>Follow Us</h4>
+                    
+                    <ul class="social">
+                        <li>
+                            <img style="width: 15px;height: 15px;background-color: white;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTduekmyVrO-eCUy4HArKlxzSwrbkKTUWPtqDwMdWU&s" alt="">
+                        </li>
+                        <li>
+                            <img style="width: 15px;height: 15px;background-color: white;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJB8Vmg-5-eHPut3HVaV1M6HqQ0ctyOZ_Qo1OdClw&s" alt="">
+                        </li>
+                        <li>
+                            <img style="width: 28px;height: 28px;background-color: white;" src="../assets/images/ins.jpg" alt="">
+                        </li>
+                        <li>
+                            <img style="width: 28px;height: 28px;background-color: white;" src="../assets/images/gg.jpg" alt="">
+                        </li>
+                        <li>
+                            <img style="width: 23px;height: 23px;background-color: white;" src="../assets/images/yt.jpg" alt="">
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container-copyright">
+                <p>Copyright © 2023  DEGREY VIETNAM Powered by Haravan</p>
+            </div>
+            
+        </div>
+    </div>
+  </footer>
